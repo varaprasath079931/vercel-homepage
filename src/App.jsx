@@ -1,16 +1,16 @@
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Features from "./components/Features.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <>
       <Navbar />
       <Hero />
       <Features />
       <Footer />
-    </div>
+    </>
   );
 }
 
