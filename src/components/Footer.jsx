@@ -1,24 +1,27 @@
-import "./Footer.css";
+import "./Features.css";
 
-function Footer() {
+function Features() {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p className="brand">Vercel</p>
+    <section className="features">
+      <h2>Everything you need to build faster</h2>
 
-        <ul className="footer-links">
-          <li>Docs</li>
-          <li>Pricing</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
+      <div className="features-grid">
+        {[
+          "Frontend Frameworks",
+          "Global Edge Network",
+          "Instant Rollbacks",
+          "Preview Deployments",
+          "Analytics",
+          "Secure by Default",
+        ].map((item) => (
+          <div className="feature-card" key={item}>
+            <h3>{item}</h3>
+            <p>Production-ready infrastructure for modern web apps.</p>
+          </div>
+        ))}
       </div>
-
-      <p className="copyright">
-        © {new Date().getFullYear()} Vercel. All rights reserved.
-      </p>
-    </footer>
+    </section>
   );
 }
 
-export default Footer;
+export default Features;
